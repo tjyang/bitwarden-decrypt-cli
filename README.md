@@ -9,7 +9,8 @@
 
 ### Pip
 ```
-pip3 install bitwarden-simple-cli
+sudo /usr/local/bin/pip3.8  install --upgrade pip
+sudo /usr/local/bin/pip3.8 install bitwarden-simple-cli
 ```
 
 ## How to use ?

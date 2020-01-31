@@ -1,0 +1,1 @@
+time (for i in {1..20}; do IDS=('5bfd3729-7074-46f8-bbe8-aa2a00d8c0f0' 'e050ece7-2361-4415-860b-aa2a00d9d2bd' '684119e7-3039-45f3-95e3-aa2a00db18f9') FIELDS=('password' 'username'); eval "time bw-simple get ${FIELDS[$((RANDOM % ${#FIELDS[@]}+1))]} ${IDS[$((RANDOM % ${#IDS[@]}+1))]} > /dev/null"; done)
