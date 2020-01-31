@@ -7,7 +7,9 @@
 
 ## How to install
 
-### Pip
+### install python-3.8.1 if on CentOS 7/8
+
+### pip3.8
 ```
 sudo /usr/local/bin/pip3.8  install --upgrade pip
 sudo /usr/local/bin/pip3.8 install bitwarden-simple-cli
@@ -19,12 +21,28 @@ This tool do not replace the official NodeJs CLI of Bitwarden. You still need it
 
 First, ensure that your bitwarden vault in unlocked and that you register the BW_SESSION in your environment.
 
+```
+[me@bitwaden01 bitwarden-decrypt-cli]$ bw unlock
+? Master password: [input is hidden] 
+[ Master password: [hidden]
+Your vault is now unlocked!
+
+To unlock your vault, set your session key to the `BW_SESSION` environment variable. ex:
+$ export BW_SESSION="xxxxxxxxxYDbibADq/9cvYmiSh1GZS/h6ttBiPeec1gqQMjYACCDxKGpO29kPv76Yc/e9PUSvOhPQANDWRF3w=="
+
+You can also pass the session key to any command with the `--session` option. ex:
+$ bw list items --session xxxxxxxxxYDbibADq/9cvYmiSh1GZS/h6ttBiPeec1gqQMjYACCDxKGpO29kPv76Yc/e9PUSvOhPQANDWRF3w==
+[me@bitwaden01 bitwarden-decrypt-cli]$ 
+
+````
 ### Get decrypted valued
 ```
-bw-simple get [FIELD=password] UUID
+export BW_SESSION="xxxxxxxxxYDbibADq/9cvYmiSh1GZS/h6ttBiPeec1gqQMjYACCDxKGpO29kPv76Yc/e9PUSvOhPQANDWRF3w=="
+bw-simple get {name|notes|password|uri|uname|...} UUID
 ```
 ### List items
 ```
+export BW_SESSION="xxxxxxxxxYDbibADq/9cvYmiSh1GZS/h6ttBiPeec1gqQMjYACCDxKGpO29kPv76Yc/e9PUSvOhPQANDWRF3w=="
 bw-simple list
 ```
 
