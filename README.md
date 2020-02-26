@@ -38,7 +38,7 @@ $ bw list items --session xxxxxxxxxYDbibADq/9cvYmiSh1GZS/h6ttBiPeec1gqQMjYACCDxK
 ### Get decrypted valued
 ```
 export BW_SESSION="xxxxxxxxxYDbibADq/9cvYmiSh1GZS/h6ttBiPeec1gqQMjYACCDxKGpO29kPv76Yc/e9PUSvOhPQANDWRF3w=="
-bw-simple get {name|notes|password|uri|uname|...} UUID
+bw-simple get {name|notes|password|uri|uris|username|...} UUID
 ```
 ### List items
 ```
