@@ -22,7 +22,7 @@ This tool do not replace the official NodeJs CLI of Bitwarden. You still need it
 First, ensure that your bitwarden vault in unlocked and that you register the BW_SESSION in your environment.
 
 ```
-[me@bitwaden01 bitwarden-decrypt-cli]$ bw unlock
+[me@bitwarden01 bitwarden-decrypt-cli]$ bw unlock
 ? Master password: [input is hidden] 
 [ Master password: [hidden]
 Your vault is now unlocked!
@@ -32,7 +32,7 @@ $ export BW_SESSION="xxxxxxxxxYDbibADq/9cvYmiSh1GZS/h6ttBiPeec1gqQMjYACCDxKGpO29
 
 You can also pass the session key to any command with the `--session` option. ex:
 $ bw list items --session xxxxxxxxxYDbibADq/9cvYmiSh1GZS/h6ttBiPeec1gqQMjYACCDxKGpO29kPv76Yc/e9PUSvOhPQANDWRF3w==
-[me@bitwaden01 bitwarden-decrypt-cli]$ 
+[me@bitwarden01 bitwarden-decrypt-cli]$ 
 
 ````
 ### Get decrypted valued
